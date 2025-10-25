@@ -6,7 +6,7 @@ st.set_page_config(page_title="Anuncios de Coches", layout="wide")
 st.header('Análisis de Anuncios de Venta de Coches')
 st.write('Esta aplicación te permite explorar los datos de anuncios de coches mediante visualizaciones interactivas.')
 try:
-    df = pd.read_csv("C:/Users/Lap Familia/Documents/Tripleten/Sprint7/Sprind-7-project/vehicles_us.csv")
+    df = pd.read_csv("vehicles_us.csv")
 except FileNotFoundError:
     st.error("Error: El archivo 'vehicles_us.csv' no se encuentra. Asegúrate de que esté en el mismo directorio que 'app.py'.")
     st.stop()
